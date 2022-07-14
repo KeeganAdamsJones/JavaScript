@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <!--
+    Keegan Jones
+    CSD 360 JavaScript - module 11
+    6/28/2021
+
+    Assignment:
+    Create a page similar to the example attached to this assignment that alters the 
+    DOM based on user input.  Create a function that is executed when an image is 
+    clicked, using the “onclick” MouseEvent.
+
+    -->
+
+
+<head>
+    <!--Give the HTML document a title-->
+    <title>Onclick Mouse Event Handling</title>
+    <!--link to external css file/stylsheet-->
+    <link rel="stylesheet" type="text/css" href="css file name goes here">
+    <style>
+        .smallimage {
+            width: 100px;
+        }
+    </style>
+    <script>
+        function changeMyMainImage(newImage) {
+            main_img = document.getElementById('mainImage');
+            main_img.src = newImage;
+        }
+    </script>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <!-- main image -->
+                <td>
+                    <img src="img1.JPG" id="mainImage" alt="GRANDE Image" height="500px">
+                </td>
+                <td>
+                    <!--Nest another table to hold the small images-->
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="img1.JPG" class="smallimage" onclick="changeMyMainImage('img1.JPG')"/>
+                            </td>
+                            <td>
+                                <img src="img2.JPG" class="smallimage" onclick="changeMyMainImage('img2.JPG')"/>
+                            </td>
+                            <td>
+                                <img src="img3.JPG" class="smallimage" onclick="changeMyMainImage('img3.JPG')"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img4.JPG" class="smallimage" onclick="changeMyMainImage('img4.JPG')"/>
+                            </td>
+                            <td>
+                                <img src="img5.JPG" class="smallimage" onclick="changeMyMainImage('img5.JPG')"/>
+                            </td>
+                            <td>
+                                <img src="img6.JPG" class="smallimage" onclick="changeMyMainImage('img6.JPG')"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img7.JPG" class="smallimage" onclick="changeMyMainImage('img7.JPG')"/>
+                            </td>
+                            <td>
+                                <img src="img8.JPG" class="smallimage" onclick="changeMyMainImage('img8.JPG')"/>
+                            </td>
+                            <td>
+                                <img src="img9.JPG" class="smallimage" onclick="changeMyMainImage('img9.JPG')"/>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
