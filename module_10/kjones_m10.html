@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!--
+    Keegan Jones
+    CSD 360 JavaScript - module 10
+    6/28/2021
+
+    Assignment:
+    For this assignment, review the attached example that demonstrates altering of 
+    an element style in response to a user event. Using information you have 
+    interest in, create a page with style alterations based on user events such as 
+    an image change, font style and/or color, and background color.
+
+    -->
+
+<head>
+    <!--Give the HTML document a title-->
+    <title>Altering Element Style, on Event Actions</title>
+    <!--link to external css file/stylsheet-->
+    <link rel="stylesheet" type="text/css" href="kjones_m10.css">
+    <!--link to google fonts for oswald font-->
+    <link to google fonts goes here >
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="page-title">Altering Element Style, on Event Actions</h1>
+        <h2 id="header-2">My 3 Beautiful Children</h2>
+        <div id="image-gallery">
+            <div class="gallery-item">
+                
+                    <img title="Nellie Brooklyn" src="nellie_color.jpeg" onmouseover="this.src='nellie_bw.jpeg'" onmouseout="this.src='nellie_color.jpeg'" />
+                
+                <h3 class="gallery-title">Nellie Brooklyn</h3>
+                
+            </div>
+            
+            <div class="gallery-item">
+                
+                    <img title="Olivia" src="olivia_color.jpeg" onmouseover="this.src='olivia_bw.jpeg'" onmouseout="this.src='olivia_color.jpeg'" />
+                
+                <h3 class="gallery-title">Olivia Grace</h3>
+                
+            </div>
+                
+            <div class="gallery-item">
+                
+                    <img title="Afton" src="afton_color.jpeg" onmouseover="this.src='afton_bw.jpeg'" onmouseout="this.src='afton_color.jpeg'" />
+                
+                <h3 class="gallery-title">Afton Lee</h3>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
