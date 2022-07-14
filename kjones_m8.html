@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Keegan Jones
+    CSD 360 JavaScript - module 8
+    6/22/2021
+
+    *This project uses JavaScript with HTML to build a table using loop iteration.
+    Within the table there are .math() methods used such as sqrt() and pow().  
+
+    Assignment:
+        Create a web page that displays a table of the values of 4 to 14 displaying 
+        their:
+        *Initial value.
+        *Square root (with only two digits to the right of the decimal point).
+        *The base multiplied to the power of 2.
+        *The base multiplied to the power of 3.
+        *Display a table containing the values using loop iteration.
+        *Ensure you include using methods .sqrt() and .pow() in the display.
+    -->
+
+
+<head>
+    <!--Give the HTML document a title-->
+    <title>Table Using Loop Iteration and 'sqrt()' & 'pow()' Methods</title>
+    <!--link to external css file/stylsheet-->
+    <link rel="stylesheet" type="text/css" href="css file name goes here">
+    <!--link to google fonts for oswald font-->
+    <link to google fonts goes here >
+    <!-- CSS style to add every other line shading -->
+    <style>
+        .dark {
+            background-color: darkgray;
+        }
+        .light {
+            background-color: white;
+        }
+    </style>
+    <script type="text/JavaScript">
+    function buildTable()
+    {
+        var table1 = document.getElementById("table1");
+        for(i = 0; i <= 10; i++) {
+            var value = i+4;
+            
+            // build new row
+            var newRow = table1.insertRow(i+1);
+            // use modulus to make odd numbered rows dark
+            if (i % 2 == 1) {
+                newRow.className = "dark";
+            }
+            else {
+                newRow.className = "light";
+            }
+            
+            // Create columns <value>  <sqr rt>  <pow2>  <pow3>
+            var indexCell = newRow.insertCell(0);
+            indexCell.innerHTML = value;
+
+            var sqrRtCell = newRow.insertCell(1);
+            sqrRtCell.innerHTML = Math.sqrt(value).toFixed(2);
+            
+            var pow2Cell = newRow.insertCell(2);
+            pow2Cell.innerHTML = Math.pow(value, 2);
+
+            var pow3Cell = newRow.insertCell(3);
+            pow3Cell.innerHTML = Math.pow(value, 3);
+        }
+
+    }
+    </script>
+</head>
+<!-- This is where I tell it when to build a table -->
+<body onload="buildTable();"> 
+    <h1>Table Using Loop Iteration and 'sqrt()' & 'pow()' Methods</h1>
+        <!-- Create the actual table -->
+        <table style="width:60%" id="table1">
+            <tr class="dark" style = "text-align: left;">
+                <th>Initial Value</th>
+                <th>Square Root</th>
+                <th>Power of 2</th>
+                <th>Power of 3</th>
+            </tr>
+            
+
+
+
+            
+        </table>
+</body>
+
+</html>

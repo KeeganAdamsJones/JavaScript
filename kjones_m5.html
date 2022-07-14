@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+    Keegan Jones
+    CSD 360 JavaScript - module 5
+    6/9/2021
+
+    For this assignment:
+    Start with the following code:
+    
+        <script type = "text/javascript">
+        function rollDice(){
+        document.form1.dice1.value = Math.floor((Math.random() * 6) + 1);
+        document.form1.dice2.value = Math.floor((Math.random() * 6) + 1);
+        document.form1.total.value = parseInt(document.form1.dice1.value) +
+        parseInt(document.form1.dice2.value);
+        var total = parseInt(document.form1.dice1.value) +
+        parseInt(document.form1.dice2.value);
+        switch(total){ }
+        }
+        </script>
+        <form name='form1'>
+        <table border='1'>
+        <tr>
+        <td> Dice 1 </td>
+        <td> <input type='text' name='dice1' /> </td>
+        <td> Dice 2 </td>
+        <td> <input type='text' name='dice2' /> </td>
+        <td> <input type='button' name='button1' onclick='rollDice()' value=' Roll Dice ' /> </td>
+        <td> Total </td>
+        <td> <input type='text' name='total' /> </td>
+        </tr>
+        </table>
+        <input type='button' name='button5' value='Reset' onclick='reset()' />
+        </form>
+    
+    Build a page correctly holding this code and then complete the switch statements so that the output results will include:
+    
+        document.form1.total.value = "Snake Eyes"; /* 2 */
+        document.form1.total.value = "Box Cars"; /* 12 */
+        document.form1.total.value = "You Win"; /* 7 or 11 */
+        document.form1.total.value = total; /* All remaining values */
+
+-->
+
+<head>
+    <!--Give the HTML document a title-->
+    <title></title>
+    <!--link to external css file/stylsheet-->
+    <link rel="stylesheet" type="text/css" href="css file name goes here">
+    <!--link to google fonts for oswald font-->
+    <link to google fonts goes here >
+    <script type = "text/javascript">
+        function rollDice(){
+            document.form1.dice1.value = Math.floor((Math.random() * 6) + 1);
+            document.form1.dice2.value = Math.floor((Math.random() * 6) + 1);
+            document.form1.total.value = parseInt(document.form1.dice1.value) +
+                parseInt(document.form1.dice2.value);
+        
+            var total = parseInt(document.form1.dice1.value) +
+                parseInt(document.form1.dice2.value);
+        
+            switch(total){
+                case (2):
+                    document.form1.total.value = "Snake Eyes"; /* 2 */ 
+                    break;
+                
+                case (12):
+                    document.form1.total.value = "Box Cars"; /* 12 */
+                    break;
+
+                case (7):
+                case (11):
+                    document.form1.total.value = "You Win"; /* 7 or 11 */
+                    break;
+            }
+        }
+        
+        </script>
+        <form name='form1'>
+        <table border='1'>
+        <tr>
+        <td> Dice 1 </td>
+        <td> <input type='text' name='dice1' /> </td>
+        <td> Dice 2 </td>
+        <td> <input type='text' name='dice2' /> </td>
+        <td> <input type='button' name='button1' onclick='rollDice()' value=' Roll Dice ' /> </td>
+        <td> Total </td>
+        <td> <input type='text' name='total' /> </td>
+        </tr>
+        </table>
+        <input type='button' name='button5' value='Reset' onclick='reset()' />
+        </form>
+</head>
+
+<body>
+    <!--header goes here-->
+        <!--divs go here in between the body-->
+</body>
+
+</html>

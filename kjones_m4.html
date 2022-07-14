@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+    Keegan Jones
+    CSD 360 JavaScript - module 4
+    6/2/2021
+
+    Assignment:
+    Start with the following two lines of JavaScript:
+    var i = 842;
+    document.write(i + i % 3 / 7 - 2 + 7 ** 3);
+    
+    Use parentheses to modify the output line to alter the result of 1183.2857142857142 to the following list of outputs.
+    341.14285714285717
+    1185.4
+    842.0011574074074
+    113.28571428571433
+    343.2
+    841.75 
+
+-->
+
+
+<head>
+    <!--Give the HTML document a title-->
+    <title>InnerHTML</title>
+    <!--link to external css file/stylsheet-->
+    
+    <!--link to google fonts for oswald font-->
+    <meta charset="utf-8">
+
+    <script type="text/JavaScript"> 
+        document.write("Assignment:" + "</br>" + "</br>" +
+    "Start with the following two lines of JavaScript:" + "</br>" + "</br>" +
+    "var i = 842;" + "</br>" +
+    "document.write(i + i % 3 / 7 - 2 + 7 ** 3);" + "</br>" + "</br>" +
+    
+    "Use parentheses to modify the output line to alter the result of 1183.2857142857142 to the following list of outputs." + "</br>" +
+    "341.14285714285717" + "</br>" +
+    "1185.4" + "</br>" +
+    "842.0011574074074" + "</br>" +
+    "113.28571428571433" + "</br>"+
+    "343.2" + "</br>"+
+    "841.75 " + "</br>" + "</br>")
+    
+        document.write("--------------------------------------------------------------------------------------------------------------------" + "</br>")
+
+        var i = 842;
+        document.write("The original operation results:" + "</br>")
+        document.write((i + i % 3 / 7 - 2 + 7 ** 3) + "</br></br>");
+        
+        document.write(("The altered operation results:") + "</br>")
+        document.write(((i + i) % 3 / 7 - 2 + 7 ** 3) + "</br>");
+        document.write((i + i % 3 / (7 - 2) + 7 ** 3) + "</br>");
+        document.write((i + i % 3 / (7 - 2 + 7) ** 3) + "</br>");
+        document.write((i + i % 3 / 7 - (2 + 7) ** 3) + "</br>");
+        document.write(((i + i) % 3 / (7 - 2) + 7 ** 3) + "</br>");
+        document.write((i + i % 3 / (7 - (2 + 7)) ** 3) + "</br>");
+
+    </script>
+</head>
+
+<body>
+    <!--header goes here-->
+        <!--divs go here in between the body-->
+        
+</body>
+
+</html>

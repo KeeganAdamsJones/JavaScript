@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+    <!--
+
+        Keegan Jones
+        CSD 360 JavaScript - module 3
+        6/1/2021
+
+        Assignment:
+        Create a web page with a short story of an event in your life. Inside 
+        the story:
+
+        Place four <span> tags containing a blank line (underscores).
+        Declare four variables holding the string inputs for these tags.
+        Create a button for each <span> tag that will replace the underscores 
+        when selected.
+       
+    -->
+
+    <head>
+
+    
+
+        <script>
+            var variable_1 = "Hofbräuhaus";
+            var variable_2 = "Palazzo Vecchio";
+            var variable_3 = "Piazza San Marco";
+            var variable_4 = "Kathe Wohlfahrt";
+
+        </script>
+
+    </head>
+
+    <body>
+        <h1> My Trip to Europe </h1>
+
+        <p> In the spring of 2019, I took my first over-seas trip to visit my friend, Melanie.  I flew 
+        from Kansas City, Missouri to Munich, Germany on February 23rd.  It was afternoon when I got to 
+        Munich.  Melanie and her husband, Joe picked me up at the airport and took me to a very famous 
+        German pub and restaurant, <span id="hofbräuhaus">_____</span>.  After a delicious dinner we 
+        walked around downtown Munich and looked at many old structures including the Marienplatz on the 
+        central square.  At nearly midnight we drove to their home in Eschenbach, on the autobahn at nearly 
+        115mph.  It was crazy how fast everyone else was driving.
+        </p>
+
+        <p> On the 24th I rested and adjusted to the time zone.  We did some light sight-seeing around 
+        her home.  On the 25th we drove to Italy.  We stopped at a McDonald’s in Innsbruck, Austria high 
+        up in the Austrian Alps.  It was really beautiful.  I remember having some culture shock when 
+        trying to use a public restroom at another pit-stop along the way.  You have to pay to use the 
+        public toilets and I couldn’t figure out how to flush!  We stayed in Vicenza, Italy and had the 
+        best pizza at a small local pizzeria where I tried limoncello for the first time.  
+        </p>
+
+        <p> On the 26th we took a train from Vicenza to Florence.  We toured the Accademia Gallery that 
+        holds Michelangelo’s David.  We also toured old Florence including an old home of the Medici 
+        family and down around the Santa Maria del Fiore Cathedral and the Ponte Vecchio Bridge.  We had 
+        dinner on the <span id="palazzoVecchio">_____</span> as the sun set.   We took the train back to 
+        Vicenza late that night.
+        </p>
+
+        <p> On the 27th we took a train to Venice where we saw the sights, and took a gondola ride out to 
+        the main channel.  It was during Carnival, so I saw some amazing costumes on the 
+        <span id="piazzaSanMarco">_____</span>.  I loved all of the warm colors in the morning sun, and it 
+        was very quiet early in the day.  There were a few musicians out playing in the narrow streets but 
+        otherwise it was quiet until about 3pm.  It felt like it was just us and the locals.  We took a train 
+        back to Vicenza that night and on the morning of the 28th we drove back to Melanie’s home in Germany, 
+        passing through the Dolomite Mountains, the Alps and through many small towns with church towers, old 
+        castles and vineyards along the way. 
+        </p>
+
+        <p> March 1st, we drove to Rothenberg, Germany.  Rothenberg was, by surprise, one of my favorite 
+        parts of my trip.  It was very quaint and quiet.  We walked the old cobblestone streets and shopped 
+        in a few stores including, <span id="katheWohlfahrt">_____</span> and had lunch in a cute little shop.  
+        I really enjoyed all of Germany much more than I realized I would.  It is beautiful and clean.  Everyone 
+        had good manners and I loved the old-world feel. 
+        </p>
+
+        <p> On the 2nd we visited Neuschwanstein Castle, home of King Ludwig II of Bavaria, in Southwest 
+        Bavaria.  We took a horse carriage from the base of the mountain up to the fairytale castle, it was 
+        beautiful! 
+        </p>
+
+        <p> We rested at Melanie’s on the 3rd, and she and her husband drove me back to Munich the morning of 
+        the 4th to catch my flight home on March 4th. 
+        </p>
+
+        
+        <p>
+
+            <button type="button"
+                onclick="document.getElementById('hofbräuhaus').innerHTML = variable_1">Hofbräuhaus</button> <br />
+
+            <button type="button"
+                onclick="document.getElementById('palazzoVecchio').innerHTML = variable_2">Palazzo Vecchio</button> <br />
+
+            <button type="button"
+                onclick="document.getElementById('piazzaSanMarco').innerHTML = variable_3">Piazza San Marco</button> <br />
+
+            <button type="button"
+            onclick="document.getElementById('katheWohlfahrt').innerHTML = variable_4">Kathe Wohlfahrt</button> <br />
+
+        </p>
+ </body>
+
+<html>

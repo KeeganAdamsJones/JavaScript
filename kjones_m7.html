@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+    Keegan Jones
+    CSD 360 JavaScript - module 7
+    6/21/2021
+
+    Assignment:
+    For this assignment, create an array of 10 favorite sport teams. Using a for 
+    loop, print the array first in the original array order and then in reverse 
+    order. Using for loop headers something like the following:
+
+    for(var i = 0; i < myArray.length; i++){
+-->
+
+<head>
+    <!--Give the HTML document a title-->
+    <title>10 Favorite Professional Baseball Teams</title>
+    <!--link to external css file/stylsheet-->
+    <link rel="stylesheet" type="text/css" href="css file name goes here">
+    <!--link to google fonts for oswald font-->
+    <link to google fonts goes here >
+    
+</head>
+
+<body>
+    <h1>10 Favorite Professional Baseball Teams</h1>
+</br>
+    <h3>First in original order, then in reverse order:</h3>
+        
+    <script>
+        // Create array 
+        let teams = [" Yankees", " Red Sox", " Cardinals", " Phillies", " Braves", " Dodgers", " White Sox", " Twins", " Indians", " Brewers"];
+        // Iterate through array to display via a for loop
+        for(let i = 0; i < teams.length; i++) {
+        document.write(teams[i] + ",");
+        }
+
+        document.write("</br>");
+        
+        // Iterate through array in reverse order via for loop
+        for(let i = teams.length - 1; i >= 0; i--) {
+            document.write(teams[i] + ",");
+        }
+    </script>
+</body>
+
+</html>

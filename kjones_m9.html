@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+    Keegan Jones
+    CSD 360 JavaScript - module 9
+    6/28/2021
+
+    Assignment:
+    For this assignment, create a function titled counter that takes an array of 
+    numbers as the parameter. The function is then to return an array holding the 
+    numbers of negative elements, zeros, and values greater than zero in the given 
+    array parameter.
+
+    -->
+
+<head>
+    <!--Give the HTML document a title-->
+    <title>A Function That Returns an Array</title>
+
+    <script>
+        
+        // Create a funtion named counter that takes an array of numbers as a parameter.
+        function counter(numbers){
+            
+            // Create an unordered list.
+            var list = "<ul>";
+            
+            var negatives = 0;
+            var zeroes = 0;
+            var positives = 0;
+            // Use a for loop to iterate through the array of numbers and place the
+            // numbers in the unordered list.
+            for(var i = 0; i < numbers.length; ++i){
+                //list += "<li>" + numbers[i] + "</li>";
+                if (numbers[i] < 0) {
+                    negatives++;
+                }
+                else if (numbers[i] == 0) {
+                    zeroes++;
+                }
+                else {
+                    positives++;
+                }
+            }
+        
+       
+        return [negatives, zeroes, positives]
+    
+        }
+        
+        // Create array of numbers including negative, 0 and positive numbers.
+        var numbers = [-10, -5, 0, 0, 0, 5, 10, 174932];
+
+        // Print list.
+        results = counter(numbers);
+        //document.write(counter(numbers));
+        document.write('<br/>Negatives: ' + results[0]);
+        document.write('<br/>Zeroes: ' + results[1]);
+        document.write('<br/>Positives: ' + results[2]);
+    </script>
+</head>
+
+<body>
+    
+</body>
+
+</html>
